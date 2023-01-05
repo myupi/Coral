@@ -1,0 +1,31 @@
+footer#footer{
+    padding: 3rem 0;
+    background-color: white;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+        font-size: 18px;
+        .first{
+            gap: 30px;
+        }
+        .second{
+            gap: 10px;
+            ul{
+                gap: 10px;
+            }
+        }
+        .third{
+            gap: 10px;
+            ul{
+                gap: 10px;
+            }
+        }
+        .fourth{
+            gap: 10px;
+            ul{
+                gap: 10px;
+            }
+        }
+    }
+}

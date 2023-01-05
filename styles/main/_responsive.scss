@@ -1,0 +1,153 @@
+@media (max-width: $lg) {
+  .container {
+    width: $md - 20px;
+  }
+  
+  section#partners{
+    display: none;
+  }
+}
+
+
+@media (max-width: $md){
+  .container{
+    width: $sm - 20px;
+  }
+  header#main-header{
+    .container{
+      nav{
+        .navigator{
+          display: none;
+        }
+        .bar-menu{
+          display: block;
+        }
+      }
+    }
+  }
+  section#showcase{
+    .container{
+      flex-direction: column;
+      gap: 90px;
+      .show{
+        h1{
+          font-size: 60px;
+        }
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  section#premium{
+    .container{
+      #p-products{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        .card{
+          width: 45%;
+          height: 250px;
+        }
+        .card:nth-child(1){
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  }
+  section#new{
+    .container{
+      .n-products{
+        grid-template-columns: repeat(2, 250px);
+        align-items: center;
+        .card{
+          height: 300px;
+        }
+      }
+    }
+  }
+  section#best{
+    .container{
+      #b-products{
+        grid-template-columns: repeat(2, 250px);
+        align-items: center;
+        .card{
+          height: 300px;
+        }
+      }
+    }
+  }
+  footer#footer{
+    .container{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  section#search{
+    .container{
+      .products{
+        grid-template-columns: repeat(2, 250px);
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  section#premium{
+    .container{
+      #p-products{
+        .card{
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  }
+  section#new{
+    .container{
+      .n-products{
+        grid-template-columns: repeat(1, 100%);
+        .card{
+          height: 300px;
+        }
+      }
+    }
+  }
+  section#best{
+    .container{
+      #b-products{
+        grid-template-columns: repeat(1, 100%);
+        .card{
+          height: 300px;
+        }
+      }
+    }
+  }
+  footer#footer{
+    .container{
+      grid-template-columns: repeat(1, 100%);
+    }
+  }
+  section#visa{
+    .container{
+      img{
+        display: none;
+      }
+    }
+  }
+  section#search{
+    .container{
+      .products{
+        grid-template-columns: repeat(1, 100%);
+      }
+    }
+  }
+}
+

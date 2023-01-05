@@ -1,0 +1,61 @@
+header#main-header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-block: 0.5rem;
+    z-index: 999999;
+    .container{
+        border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+        padding-block: 1rem;
+        nav{
+            .navigator{
+                gap: 5px;
+                font-size: 18px;
+                li{
+                    a{
+                        padding: 10px;
+                        border-radius: 5px;
+                        &:active{
+                            border: 1px solid black;
+                            padding: 9px;
+                        }
+                    }
+                }
+            }
+            .bar-menu{
+                display: none;
+            }
+            .bar{
+                position: fixed;
+                font-size: 18px;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                padding: 2rem;
+                transform: translateX(-100%);
+                transition: 0.3s linear;
+                .top{
+                    h2{
+                        font-size: 40px;
+                    }
+                }
+                ul{
+                    margin-top: 50px;
+                    gap: 20px;
+                    li{
+                        a{
+                            padding: 10px;
+                            border-radius: 5px;
+                            &:active{
+                                border: 1px solid black;
+                                padding: 9px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
