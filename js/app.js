@@ -284,3 +284,13 @@ for (let i = 0; i < newarr.length; i++) {
 
 let bestProducts = products.sort(function (a, b) {return a.price - b.price;}).slice(0, 4);
 
+
+for (let i = 0; i < bestProducts.length; i++) {
+  createCard(
+    divBest,
+    bestProducts[i].image,
+    bestProducts[i].rating.rate,
+    bestProducts[i].rating.count,
+    bestProducts[i].price
+  );
+}
